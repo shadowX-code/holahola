@@ -2573,8 +2573,8 @@ a {
 
   .nav-socials {
     width: 100%;
-    margin: auto 0 0;
-    padding-top: 22px;
+    margin: 6px 0 0;
+    padding-top: 16px;
     border-top: 1px solid rgba(0, 63, 45, 0.14);
     flex-wrap: wrap;
     justify-content: flex-start;
