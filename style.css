@@ -1259,6 +1259,12 @@ a {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 
+.footer-icon img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
 .footer-panel h3,
 .footer-follow h3,
 .footer-loop h3 {
@@ -1334,6 +1340,12 @@ a {
   border-radius: 50%;
   color: var(--yellow);
   font-size: 18px;
+}
+
+.contact-row span img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
 }
 
 .contact-row:first-of-type span {
@@ -1564,8 +1576,7 @@ a {
   content: "";
   width: 30px;
   height: 30px;
-  background: currentColor;
-  clip-path: path("M15 2C8.4 2 3 7.1 3 13.4c0 2.1.6 4.2 1.8 5.9L3.6 26l6.9-1.8c1.5.7 3.1 1.1 4.8 1.1 6.6 0 12-5.1 12-11.4S21.6 2 15 2Zm0 20.8c-1.5 0-2.9-.4-4.2-1.1l-.5-.3-4 1 1-3.8-.3-.5c-1-1.4-1.5-3-1.5-4.7C5.5 8.5 9.8 4.5 15 4.5s9.5 4 9.5 8.9-4.3 9.4-9.5 9.4Zm5.1-6.9c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.4-1.4-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.4 5.2 4.6.7.3 1.3.5 1.8.6.8.2 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z");
+  background: url("images/footer/icons/whatsapp-white.png") center / contain no-repeat;
 }
 
 .whatsapp-float:hover {
@@ -1861,7 +1872,9 @@ a {
 
 .category-row {
   position: relative;
-  min-height: 82px;
+  min-height: 74px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   overflow: hidden;
   border-radius: 0 10px 10px 0;
   background: #fbecd7;
@@ -1912,15 +1925,18 @@ a {
   display: grid;
   grid-template-columns: 52px 1fr;
   column-gap: 10px;
+  row-gap: 2px;
   align-items: center;
-  height: 82px;
+  height: auto;
+  min-height: 42px;
   padding-left: 28px;
 }
 
 .category-row strong {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: var(--green);
-  font-size: 25px;
-  font-weight: 950;
+  font-size: 30px;
+  font-weight: 800;
   transition: color 0.18s ease;
 }
 
@@ -1980,20 +1996,25 @@ a {
 }
 
 .category-row h3 {
-  margin: 0;
-  color: var(--green);
-  font-family: "Brush Script MT", "Segoe Script", cursive;
-  font-size: 39px;
-  line-height: 0.9;
-  font-weight: 500;
+  margin: 0 0 2px;
+  color: #003f2d;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 .category-row p {
   grid-column: 2;
-  margin: -18px 0 0;
-  color: #29231c;
-  font-size: 13px;
-  font-weight: 650;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.72);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transform: translateY(-2px);
 }
 
 .signature-section {
@@ -3308,7 +3329,9 @@ a {
   }
 
   .category-row {
-    min-height: 116px;
+    min-height: 96px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     border-radius: 10px;
   }
 
@@ -3322,17 +3345,26 @@ a {
   }
 
   .category-row div {
-    height: 116px;
+    height: auto;
+    min-height: 68px;
     grid-template-columns: 48px 1fr;
+    row-gap: 2px;
     padding-left: 20px;
   }
 
   .category-row h3 {
-    font-size: 34px;
+    font-size: 26px;
   }
 
   .category-row p {
-    margin-top: -26px;
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 1.25;
+    transform: translateY(-2px);
+  }
+
+  .category-row strong {
+    font-size: 28px;
   }
 
   .menu-poster-card {
