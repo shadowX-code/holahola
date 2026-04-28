@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola Hola Kopitiam</title>
+    <meta name="description" content="Hola Hola Kopitiam Nanyang food, daily promotions, must try menu and gallery." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="nav-wrap">
+        <a class="logo" href="index.html" aria-label="Hola Hola Kopitiam home">
+          <img src="images/logo/logo.png" alt="Hola Hola Kopitiam" />
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+          <a class="active" href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="index.html#contact">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-wrap">
+          <div class="hero-copy">
+            <p class="hero-kicker">TASTE THE</p>
+            <h1><span>NEW</span><em>Nanyang</em></h1>
+            <p class="hero-sub">
+              Local flavours, modern comfort.<br />
+              Made for every craving,<br />
+              every mood, every gathering.
+            </p>
+            <div class="hero-actions">
+              <a class="hero-cta hero-cta-primary" href="menu.html">
+                <span class="hero-cta-main">
+                  <img class="hero-cta-icon fork" src="icons/fork.svg" alt="" aria-hidden="true" />
+                  <span>VIEW MENU</span>
+                  <span class="hero-cta-arrow" aria-hidden="true">→</span>
+                </span>
+                <small>⌁ See our best dishes</small>
+              </a>
+              <a class="hero-cta hero-cta-secondary" href="#contact">
+                <span class="hero-cta-main">
+                  <span class="hero-cta-icon location" aria-hidden="true"></span>
+                  <span>VISIT US</span>
+                </span>
+                <small>⌁ Find our nearest outlet</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promotions" id="promotions">
+        <div class="container">
+          <div class="section-title">
+            <span class="ornament">⌁</span>
+            <div>
+              <h2>TODAY'S PROMOTIONS</h2>
+              <p>Eat more, save more!</p>
+            </div>
+            <span class="ornament flip">⌁</span>
+          </div>
+
+          <div class="promo-grid">
+            <article class="promo-card promo-combo">
+              <div class="discount-badge">20%<br /><span>OFF</span></div>
+              <div class="promo-text">
+                <span class="promo-tag">LIMITED TIME</span>
+                <h3>COMBO DEAL</h3>
+                <p>Main + Drink<br />Save instantly!</p>
+                <small>*T&amp;Cs apply.</small>
+                <button class="mini-btn yellow promo-modal-trigger" type="button" data-promo-poster="images/promotions/combo-deal-poster.png" data-promo-fallback="images/food/promo-combo.png" data-promo-alt="Combo Deal promotion poster">VIEW MORE</button>
+              </div>
+              <!-- Replace with real food image -->
+              <img src="images/food/promo-combo.png" alt="Combo deal food" />
+            </article>
+
+            <article class="promo-card promo-stamp">
+              <div class="promo-text">
+                <span class="promo-tag">MEMBER REWARD</span>
+                <h3><span class="reward-icon">▣</span> STAMP REWARD</h3>
+                <p>RM25 spent = 1 Stamp<br />8 Stamps = FREE Meal</p>
+                <div class="stamp-row" aria-label="8 stamp circles">
+                  <span>1</span><span>2</span><span>3</span><span>4</span>
+                  <span>5</span><span>6</span><span>7</span><span>8</span><span class="stamp-gift" aria-label="Free meal reward"></span>
+                </div>
+                <button class="mini-btn green promo-modal-trigger" type="button" data-promo-poster="images/promotions/stamp-reward-poster.png" data-promo-fallback="images/food/promo-reward.png" data-promo-alt="Stamp Reward promotion poster">VIEW MORE</button>
+              </div>
+              <!-- Replace with real food image -->
+              <img src="images/food/promo-reward.png" alt="Stamp reward meal" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="must-try" id="menu">
+        <div class="container menu-box">
+          <div class="menu-head">
+            <div class="section-title small">
+              <span class="ornament">⌁</span>
+              <div>
+                <h2>OUR MUST TRY</h2>
+                <p>Top favourites you'll love!</p>
+              </div>
+              <span class="ornament flip">⌁</span>
+            </div>
+            <a class="view-all" href="menu.html">VIEW ALL MENU →</a>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-image">
+                <!-- Replace with real food image -->
+                <img src="images/food/signature-nasi-lemak.png" alt="Signature Double Nasi Lemak" />
+                <span>TOP PICK</span>
+              </div>
+              <div class="product-body">
+                <h3>Signature Double<br />Nasi Lemak</h3>
+                <p>Crispy chicken, sambal,<br />peanuts, egg &amp; more.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <!-- Replace with real food image -->
+                <img src="images/food/salted-egg-chicken.png" alt="Salted Egg Chicken Chop" />
+                <span>TOP PICK</span>
+              </div>
+              <div class="product-body">
+                <h3>Salted Egg<br />Chicken Chop</h3>
+                <p>Crispy chicken chop with<br />creamy salted egg sauce.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <!-- Replace with real food image -->
+                <img src="images/food/bolo-chicken-rice.png" alt="Bolo Sunny Crispy Chicken Rice" />
+                <span>TOP PICK</span>
+              </div>
+              <div class="product-body">
+                <h3>Bolo Sunny<br />Crispy Chicken Rice</h3>
+                <p>Rich bolognese sauce,<br />crispy chicken &amp; sunny egg.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <!-- Replace with real food image -->
+                <img src="images/food/nyonya-acar-pasta.png" alt="Chilled Nyonya Acar Pasta" />
+                <span class="new">NEW</span>
+              </div>
+              <div class="product-body">
+                <h3>Chilled Nyonya<br />Acar Pasta</h3>
+                <p>Refreshing, tangy &amp; light.<br />Perfect for any day.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="promo-modal" id="promoModal" aria-hidden="true">
+      <div class="promo-modal-backdrop" data-modal-close></div>
+      <div class="promo-modal-dialog" role="dialog" aria-modal="true" aria-label="Promotion poster">
+        <button class="promo-modal-close" type="button" aria-label="Close promotion poster" data-modal-close>×</button>
+        <img id="promoModalImage" src="images/food/promo-combo.png" alt="Promotion poster" />
+      </div>
+    </div>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-shell">
+        <div class="footer-top">
+          <div class="footer-invite">
+            <h2>Come say<br /><span class="footer-hola-line"><span>Hola</span> today.</span></h2>
+            <i aria-hidden="true"></i>
+            <p>Inspired by kopitiam culture,<br />made for today’s comfort.</p>
+            <div class="footer-logo-mark">
+              <img src="images/logo/logo.png" alt="Hola Hola Kopitiam" />
+            </div>
+          </div>
+
+          <div class="footer-panel footer-visit">
+            <div class="footer-icon" aria-hidden="true">⌖</div>
+            <h3>VISIT US</h3>
+            <p>
+              Hola Hola Kopitiam<br />
+              67, Jalan Medan Ipoh 1A,<br />
+              Taman Ipoh Timur,<br />
+              31400 Ipoh, Perak.
+            </p>
+            <a class="footer-pill" href="https://share.google/XCFySOkUaAAFdQD67" target="_blank" rel="noreferrer">⌖ OPEN IN MAPS</a>
+          </div>
+
+          <div class="footer-panel footer-hours">
+            <div class="footer-icon" aria-hidden="true">◷</div>
+            <h3>OPENING HOURS</h3>
+            <p>Monday – Sunday</p>
+            <strong>11:00am - 9:00pm</strong>
+          </div>
+
+          <div class="footer-panel footer-contact">
+            <div class="footer-icon" aria-hidden="true">☎</div>
+            <h3>CONTACT</h3>
+            <a class="contact-row" href="https://wa.me/601159132626" target="_blank" rel="noreferrer">
+              <span>☘</span>
+              <b>WhatsApp<small>+6011-5913 2626</small></b>
+            </a>
+            <a class="contact-row" href="tel:+601159132626">
+              <span>☎</span>
+              <b>Call Us<small>+6011-5913 2626</small></b>
+            </a>
+          </div>
+
+          <figure class="footer-shop">
+            <img src="images/footer/shop-front.png" alt="Hola Hola Kopitiam shop front" />
+          </figure>
+        </div>
+
+        <div class="footer-middle">
+          <div class="footer-follow">
+            <h3>FOLLOW US</h3>
+            <div class="footer-socials">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">◎</a>
+              <a href="#" aria-label="Xiaohongshu">RED</a>
+            </div>
+          </div>
+
+          <div class="footer-loop">
+            <span aria-hidden="true">✉</span>
+            <div>
+              <h3>STAY IN THE LOOP</h3>
+              <p>Be the first to know about new dishes,<br />promotions and special events.</p>
+            </div>
+          </div>
+
+          <form class="footer-subscribe" action="#" method="post">
+            <label class="sr-only" for="footer-email-home">Your email address</label>
+            <input id="footer-email-home" type="email" placeholder="Your email address" />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Hola Hola Kopitiam. All rights reserved.</p>
+          <nav aria-label="Footer links">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERMS &amp; CONDITIONS</a>
+            <a href="#">CAREERS</a>
+          </nav>
+          <a class="back-to-top" href="#" aria-label="Back to top">↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/601159132626" target="_blank" rel="noreferrer" aria-label="WhatsApp Hola Hola Kopitiam"></a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
