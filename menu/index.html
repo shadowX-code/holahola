@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu | Hola Hola Kopitiam</title>
     <meta name="description" content="Explore Hola Hola Kopitiam menu categories and signature picks." />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" as="image" href="../images/menu/top-picks-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/egg-toast-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/nasi-lemak-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/curry-laksa-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/chicken-rice-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/scallion-oil-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/noodles-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/western-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/pasta-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/snacks-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/dessert-poster.png" />
+    <link rel="preload" as="image" href="../images/menu/drinks-poster.png" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body class="menu-page">
     <header class="site-header" id="siteHeader">
       <div class="nav-wrap">
-        <a class="logo" href="index.html" aria-label="Hola Hola Kopitiam home">
-          <img src="images/logo/logo.png" alt="Hola Hola Kopitiam" />
+        <a class="logo" href="../" data-file-href="../index.html" aria-label="Hola Hola Kopitiam home">
+          <img src="../images/logo/logo.png" alt="Hola Hola Kopitiam" />
         </a>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
@@ -21,10 +33,14 @@
         </button>
 
         <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
-          <a href="index.html">HOME</a>
-          <a class="active" href="menu.html">MENU</a>
-          <a href="about.html">ABOUT US</a>
-          <a href="index.html#contact">CONTACT</a>
+          <a href="../" data-file-href="../index.html">HOME</a>
+          <a class="active" href="../menu/" data-file-href="../menu/index.html">MENU</a>
+          <a href="../about/" data-file-href="../about/index.html">ABOUT US</a>
+          <a href="../#contact" data-file-href="../index.html#contact">CONTACT</a>
+          <span class="nav-socials" aria-label="Social links">
+            <a class="nav-social" href="https://www.instagram.com/holahola.kopitiam" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="../icons/instagram.svg" alt="" /></a>
+            <a class="nav-social" href="https://www.facebook.com/holaholakopitiam" target="_blank" rel="noreferrer" aria-label="Facebook"><img src="../icons/facebook.svg" alt="" /></a>
+          </span>
         </nav>
       </div>
     </header>
@@ -73,8 +89,8 @@
             </aside>
 
             <div class="category-stack">
-              <article class="category-row category-item" data-category="top-picks" data-poster="images/menu/top-picks-poster.png" data-fallback="images/menu/top-picks-poster.png" data-title="01 Top Picks" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/food/signature-nasi-lemak.png" alt="Top Picks category" />
+              <article class="category-row category-item" data-category="top-picks" data-poster="../images/menu/top-picks-poster.png" data-fallback="../images/menu/top-picks-category.png" data-title="01 Top Picks" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/top-picks-category.png" alt="Top Picks category" />
                 <div>
                   <strong>01</strong>
                   <h3>Top Picks</h3>
@@ -84,12 +100,12 @@
               <div class="menu-poster-panel" data-panel-for="top-picks" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/top-picks-poster.png" alt="01 Top Picks menu poster" />
+                    <img src="../images/menu/top-picks-category.png" alt="01 Top Picks menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="egg-toast" data-poster="images/menu/egg-toast-poster.png" data-fallback="images/menu/egg-toast.png" data-title="02 Egg &amp; Toast" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/egg-toast.png" alt="Egg and Toast category" />
+              <article class="category-row category-item" data-category="egg-toast" data-poster="../images/menu/egg-toast-poster.png" data-fallback="../images/menu/egg-toast-category.png" data-title="02 Egg &amp; Toast" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/egg-toast-category.png" alt="Egg and Toast category" />
                 <div>
                   <strong>02</strong>
                   <h3>Egg &amp; Toast</h3>
@@ -99,12 +115,12 @@
               <div class="menu-poster-panel" data-panel-for="egg-toast" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/egg-toast.png" alt="02 Egg and Toast menu poster" />
+                    <img src="../images/menu/egg-toast-category.png" alt="02 Egg and Toast menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="nasi-lemak" data-poster="images/menu/nasi-lemak-poster.png" data-fallback="images/menu/nasi-lemak-category.png" data-title="03 Nasi Lemak" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/nasi-lemak-category.png" alt="Nasi Lemak category" />
+              <article class="category-row category-item" data-category="nasi-lemak" data-poster="../images/menu/nasi-lemak-poster.png" data-fallback="../images/menu/nasi-lemak-category.png" data-title="03 Nasi Lemak" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/nasi-lemak-category.png" alt="Nasi Lemak category" />
                 <div>
                   <strong>03</strong>
                   <h3>Nasi Lemak</h3>
@@ -114,12 +130,12 @@
               <div class="menu-poster-panel" data-panel-for="nasi-lemak" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/nasi-lemak-category.png" alt="03 Nasi Lemak menu poster" />
+                    <img src="../images/menu/nasi-lemak-category.png" alt="03 Nasi Lemak menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="curry-laksa" data-poster="images/menu/curry-laksa-poster.png" data-fallback="images/menu/curry-laksa-category.png" data-title="04 Curry Laksa" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/curry-laksa-category.png" alt="Curry Laksa category" />
+              <article class="category-row category-item" data-category="curry-laksa" data-poster="../images/menu/curry-laksa-poster.png" data-fallback="../images/menu/curry-laksa-category.png" data-title="04 Curry Laksa" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/curry-laksa-category.png" alt="Curry Laksa category" />
                 <div>
                   <strong>04</strong>
                   <h3>Curry Laksa</h3>
@@ -129,12 +145,12 @@
               <div class="menu-poster-panel" data-panel-for="curry-laksa" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/curry-laksa-category.png" alt="04 Curry Laksa menu poster" />
+                    <img src="../images/menu/curry-laksa-category.png" alt="04 Curry Laksa menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="chicken-rice" data-poster="images/menu/chicken-rice-poster.png" data-fallback="images/menu/chicken-rice-category.png" data-title="05 Chicken Rice" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/chicken-rice-category.png" alt="Chicken Rice category" />
+              <article class="category-row category-item" data-category="chicken-rice" data-poster="../images/menu/chicken-rice-poster.png" data-fallback="../images/menu/chicken-rice-category.png" data-title="05 Chicken Rice" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/chicken-rice-category.png" alt="Chicken Rice category" />
                 <div>
                   <strong>05</strong>
                   <h3>Chicken Rice</h3>
@@ -144,12 +160,12 @@
               <div class="menu-poster-panel" data-panel-for="chicken-rice" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/chicken-rice-category.png" alt="05 Chicken Rice menu poster" />
+                    <img src="../images/menu/chicken-rice-category.png" alt="05 Chicken Rice menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="scallion-oil" data-poster="images/menu/scallion-oil-poster.png" data-fallback="images/menu/pasta-category.png" data-title="06 Scallion Oil Series" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/pasta-category.png" alt="Scallion Oil Series category" />
+              <article class="category-row category-item" data-category="scallion-oil" data-poster="../images/menu/scallion-oil-poster.png" data-fallback="../images/menu/scallion-oil-category.png" data-title="06 Scallion Oil Series" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/scallion-oil-category.png" alt="Scallion Oil Series category" />
                 <div>
                   <strong>06</strong>
                   <h3>Scallion Oil Series</h3>
@@ -159,12 +175,12 @@
               <div class="menu-poster-panel" data-panel-for="scallion-oil" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/pasta-category.png" alt="06 Scallion Oil Series menu poster" />
+                    <img src="../images/menu/scallion-oil-category.png" alt="06 Scallion Oil Series menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="noodles" data-poster="images/menu/noodles-poster.png" data-fallback="images/menu/curry-laksa-category.png" data-title="07 Noodles" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/curry-laksa-category.png" alt="Noodles category" />
+              <article class="category-row category-item" data-category="noodles" data-poster="../images/menu/noodles-poster.png" data-fallback="../images/menu/noodles-category.png" data-title="07 Noodles" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/noodles-category.png" alt="Noodles category" />
                 <div>
                   <strong>07</strong>
                   <h3>Noodles</h3>
@@ -174,12 +190,12 @@
               <div class="menu-poster-panel" data-panel-for="noodles" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/curry-laksa-category.png" alt="07 Noodles menu poster" />
+                    <img src="../images/menu/noodles-category.png" alt="07 Noodles menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="western" data-poster="images/menu/western-poster.png" data-fallback="images/food/salted-egg-chicken.png" data-title="08 Western" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/food/salted-egg-chicken.png" alt="Western category" />
+              <article class="category-row category-item" data-category="western" data-poster="../images/menu/western-poster.png" data-fallback="../images/menu/western-category.png" data-title="08 Western" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/western-category.png" alt="Western category" />
                 <div>
                   <strong>08</strong>
                   <h3>Western</h3>
@@ -189,12 +205,12 @@
               <div class="menu-poster-panel" data-panel-for="western" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/food/salted-egg-chicken.png" alt="08 Western menu poster" />
+                    <img src="../images/menu/western-category.png" alt="08 Western menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="pasta" data-poster="images/menu/pasta-poster.png" data-fallback="images/menu/pasta-category.png" data-title="09 Pasta" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/pasta-category.png" alt="Pasta category" />
+              <article class="category-row category-item" data-category="pasta" data-poster="../images/menu/pasta-poster.png" data-fallback="../images/menu/pasta-category.png" data-title="09 Pasta" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/pasta-category.png" alt="Pasta category" />
                 <div>
                   <strong>09</strong>
                   <h3>Pasta</h3>
@@ -204,12 +220,12 @@
               <div class="menu-poster-panel" data-panel-for="pasta" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/pasta-category.png" alt="09 Pasta menu poster" />
+                    <img src="../images/menu/pasta-category.png" alt="09 Pasta menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="snacks" data-poster="images/menu/snacks-poster.png" data-fallback="images/menu/snacks-category.png" data-title="10 Snacks" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/menu/snacks-category.png" alt="Snacks category" />
+              <article class="category-row category-item" data-category="snacks" data-poster="../images/menu/snacks-poster.png" data-fallback="../images/menu/snacks-category.png" data-title="10 Snacks" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/snacks-category.png" alt="Snacks category" />
                 <div>
                   <strong>10</strong>
                   <h3>Snacks</h3>
@@ -219,12 +235,12 @@
               <div class="menu-poster-panel" data-panel-for="snacks" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/menu/snacks-category.png" alt="10 Snacks menu poster" />
+                    <img src="../images/menu/snacks-category.png" alt="10 Snacks menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="dessert" data-poster="images/menu/dessert-poster.png" data-fallback="images/gallery/gallery-6.png" data-title="11 Dessert" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/gallery/gallery-6.png" alt="Dessert category" />
+              <article class="category-row category-item" data-category="dessert" data-poster="../images/menu/dessert-poster.png" data-fallback="../images/menu/dessert-category.png" data-title="11 Dessert" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/dessert-category.png" alt="Dessert category" />
                 <div>
                   <strong>11</strong>
                   <h3>Dessert</h3>
@@ -234,12 +250,12 @@
               <div class="menu-poster-panel" data-panel-for="dessert" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/gallery/gallery-6.png" alt="11 Dessert menu poster" />
+                    <img src="../images/menu/dessert-category.png" alt="11 Dessert menu poster" />
                   </div>
                 </div>
               </div>
-              <article class="category-row category-item" data-category="drinks" data-poster="images/menu/drinks-poster.png" data-fallback="images/gallery/gallery-3.png" data-title="12 Drinks" role="button" tabindex="0" aria-expanded="false">
-                <img src="images/gallery/gallery-3.png" alt="Drinks category" />
+              <article class="category-row category-item" data-category="drinks" data-poster="../images/menu/drinks-poster.png" data-fallback="../images/menu/drinks-category.png" data-title="12 Drinks" role="button" tabindex="0" aria-expanded="false">
+                <img src="../images/menu/drinks-category.png" alt="Drinks category" />
                 <div>
                   <strong>12</strong>
                   <h3>Drinks</h3>
@@ -249,7 +265,7 @@
               <div class="menu-poster-panel" data-panel-for="drinks" aria-hidden="true">
                 <div class="menu-poster-card">
                   <div class="menu-poster-image-wrap">
-                    <img src="images/gallery/gallery-3.png" alt="12 Drinks menu poster" />
+                    <img src="../images/menu/drinks-category.png" alt="12 Drinks menu poster" />
                   </div>
                 </div>
               </div>
@@ -271,7 +287,7 @@
           <div class="signature-grid">
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/hainan-chicken-curry-noodles.png" alt="Hainan Chicken Curry Noodles" />
+                <img src="../images/menu/signature/hainan-chicken-curry-noodles.png" alt="Hainan Chicken Curry Noodles" />
                 <span>TOP PICK ☆</span>
               </div>
               <div class="signature-body">
@@ -282,7 +298,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/crispy-chicken-dry-curry-noodles.png" alt="Crispy Chicken Dry Curry Noodles" />
+                <img src="../images/menu/signature/crispy-chicken-dry-curry-noodles.png" alt="Crispy Chicken Dry Curry Noodles" />
                 <span>TOP PICK ☆</span>
               </div>
               <div class="signature-body">
@@ -293,7 +309,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/hainan-chicken-rice.png" alt="Hainan Chicken Rice" />
+                <img src="../images/menu/signature/hainan-chicken-rice.png" alt="Hainan Chicken Rice" />
                 <span>TOP PICK ☆</span>
               </div>
               <div class="signature-body">
@@ -304,7 +320,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/bolo-sunny-crispy-chicken-rice.png" alt="Bolo Sunny Crispy Chicken Rice" />
+                <img src="../images/menu/signature/bolo-sunny-crispy-chicken-rice.png" alt="Bolo Sunny Crispy Chicken Rice" />
                 <span>TOP PICK ☆</span>
               </div>
               <div class="signature-body">
@@ -315,7 +331,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/salted-egg-chicken-chop-rice.png" alt="Salted Egg Chicken Chop Rice with Fries" />
+                <img src="../images/menu/signature/salted-egg-chicken-chop-rice.png" alt="Salted Egg Chicken Chop Rice with Fries" />
                 <span>TOP PICK ☆</span>
               </div>
               <div class="signature-body">
@@ -326,7 +342,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/classic-hainan-chicken-chop.png" alt="Classic Hainan Chicken Chop" />
+                <img src="../images/menu/signature/classic-hainan-chicken-chop.png" alt="Classic Hainan Chicken Chop" />
                 <span>TOP PICK ☆</span>
               </div>
               <div class="signature-body">
@@ -337,7 +353,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/chilled-nyonya-acar-pasta.png" alt="Chilled Nyonya Acar Pasta" />
+                <img src="../images/menu/signature/chilled-nyonya-acar-pasta.png" alt="Chilled Nyonya Acar Pasta" />
                 <span class="new">NEW</span>
               </div>
               <div class="signature-body">
@@ -348,7 +364,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/peanut-butter-waffle-cube.png" alt="Peanut Butter Waffle Cube" />
+                <img src="../images/menu/signature/peanut-butter-waffle-cube.png" alt="Peanut Butter Waffle Cube" />
                 <span class="new">NEW</span>
               </div>
               <div class="signature-body">
@@ -359,7 +375,7 @@
 
             <article class="signature-card">
               <div class="signature-image">
-                <img src="images/menu/signature/red-bean-frost.png" alt="Red Bean Frost" />
+                <img src="../images/menu/signature/red-bean-frost.png" alt="Red Bean Frost" />
                 <span class="new">NEW</span>
               </div>
               <div class="signature-body">
@@ -380,7 +396,7 @@
               <h2>View Full Menu</h2>
               <p>Explore all our dishes and find your next favourite!</p>
             </div>
-            <a href="assets/menu/full-menu.pdf" target="_blank" rel="noreferrer">SEE ALL ITEMS <span>→</span></a>
+            <a href="../assets/menu/full-menu.pdf" target="_blank" rel="noreferrer">SEE ALL ITEMS <span>→</span></a>
           </div>
         </div>
       </section>
@@ -394,12 +410,12 @@
             <i aria-hidden="true"></i>
             <p>Inspired by kopitiam culture,<br />made for today’s comfort.</p>
             <div class="footer-logo-mark">
-              <img src="images/logo/logo.png" alt="Hola Hola Kopitiam" />
+              <img src="../images/logo/logo.png" alt="Hola Hola Kopitiam" />
             </div>
           </div>
 
           <div class="footer-panel footer-visit">
-            <div class="footer-icon" aria-hidden="true"><img src="images/footer/icons/location-pin.png" alt="" /></div>
+            <div class="footer-icon" aria-hidden="true"><img src="../images/footer/icons/location-pin.png" alt="" /></div>
             <h3>VISIT US</h3>
             <p>
               Hola Hola Kopitiam<br />
@@ -411,53 +427,28 @@
           </div>
 
           <div class="footer-panel footer-hours">
-            <div class="footer-icon" aria-hidden="true"><img src="images/footer/icons/clock.png" alt="" /></div>
+            <div class="footer-icon" aria-hidden="true"><img src="../images/footer/icons/clock.png" alt="" /></div>
             <h3>OPENING HOURS</h3>
             <p>Monday – Sunday</p>
-            <strong>11:00am - 9:00pm</strong>
+            <strong>10:00am - 10:00pm</strong>
           </div>
 
           <div class="footer-panel footer-contact">
-            <div class="footer-icon" aria-hidden="true"><img src="images/footer/icons/phone.png" alt="" /></div>
+            <div class="footer-icon" aria-hidden="true"><img src="../images/footer/icons/phone.png" alt="" /></div>
             <h3>CONTACT</h3>
             <a class="contact-row" href="https://wa.me/601159132626" target="_blank" rel="noreferrer">
-              <span><img src="images/footer/icons/whatsapp-white.png" alt="" /></span>
+              <span><img src="../images/footer/icons/whatsapp-white.png" alt="" /></span>
               <b>WhatsApp<small>+6011-5913 2626</small></b>
             </a>
             <a class="contact-row" href="tel:+601159132626">
-              <span><img src="images/footer/icons/call.png" alt="" /></span>
+              <span><img src="../images/footer/icons/call.png" alt="" /></span>
               <b>Call Us<small>+6011-5913 2626</small></b>
             </a>
           </div>
 
           <figure class="footer-shop">
-            <img src="images/footer/shop-front.png" alt="Hola Hola Kopitiam shop front" />
+            <img src="../images/footer/shop-front.png" alt="Hola Hola Kopitiam shop front" />
           </figure>
-        </div>
-
-        <div class="footer-middle">
-          <div class="footer-follow">
-            <h3>FOLLOW US</h3>
-            <div class="footer-socials">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Instagram">◎</a>
-              <a href="#" aria-label="TikTok">♪</a>
-            </div>
-          </div>
-
-          <div class="footer-loop">
-            <span aria-hidden="true">✉</span>
-            <div>
-              <h3>STAY IN THE LOOP</h3>
-              <p>Be the first to know about new dishes,<br />promotions and special events.</p>
-            </div>
-          </div>
-
-          <form class="footer-subscribe" action="#" method="post">
-            <label class="sr-only" for="footer-email-menu">Your email address</label>
-            <input id="footer-email-menu" type="email" placeholder="Your email address" />
-            <button type="submit">SUBSCRIBE</button>
-          </form>
         </div>
 
         <div class="footer-bottom">
@@ -472,8 +463,23 @@
       </div>
     </footer>
 
+    <div class="poster-preload" aria-hidden="true">
+      <img src="../images/menu/top-picks-poster.png" alt="" />
+      <img src="../images/menu/egg-toast-poster.png" alt="" />
+      <img src="../images/menu/nasi-lemak-poster.png" alt="" />
+      <img src="../images/menu/curry-laksa-poster.png" alt="" />
+      <img src="../images/menu/chicken-rice-poster.png" alt="" />
+      <img src="../images/menu/scallion-oil-poster.png" alt="" />
+      <img src="../images/menu/noodles-poster.png" alt="" />
+      <img src="../images/menu/western-poster.png" alt="" />
+      <img src="../images/menu/pasta-poster.png" alt="" />
+      <img src="../images/menu/snacks-poster.png" alt="" />
+      <img src="../images/menu/dessert-poster.png" alt="" />
+      <img src="../images/menu/drinks-poster.png" alt="" />
+    </div>
+
     <a class="whatsapp-float" href="https://wa.me/601159132626" target="_blank" rel="noreferrer" aria-label="WhatsApp Hola Hola Kopitiam"></a>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

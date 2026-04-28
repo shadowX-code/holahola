@@ -1,7 +1,7 @@
 const header = document.getElementById("siteHeader");
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
-const navLinks = [...document.querySelectorAll(".nav-menu a[href^='#']:not(.order-btn)")];
+const navLinks = [...document.querySelectorAll(".nav-menu > a[href^='#']:not(.order-btn)")];
 const sections = [...document.querySelectorAll("main section[id], footer[id]")];
 
 function updateHeader() {
@@ -24,6 +24,20 @@ navMenu.addEventListener("click", (event) => {
   if (event.target.closest("a")) {
     closeMenu();
   }
+});
+
+document.querySelectorAll("a[data-file-href]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (window.location.protocol !== "file:") return;
+    event.preventDefault();
+    window.location.href = link.dataset.fileHref;
+  });
+});
+
+document.querySelectorAll(".nav-social[href='#']").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
 });
 
 window.addEventListener("scroll", updateHeader, { passive: true });
@@ -117,7 +131,7 @@ function openCategoryPoster(categoryKey) {
 
   window.setTimeout(() => {
     scrollPosterPanelToTop(panel);
-  }, 120);
+  }, 50);
 
   window.setTimeout(() => {
     if (panel.classList.contains("open")) {
@@ -178,12 +192,6 @@ document.querySelectorAll("[data-modal-close]").forEach((button) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closePromoModal();
-});
-
-document.querySelectorAll(".footer-subscribe").forEach((form) => {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-  });
 });
 
 document.querySelectorAll(".back-to-top").forEach((link) => {

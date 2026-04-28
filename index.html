@@ -19,7 +19,7 @@
   <body>
     <header class="site-header" id="siteHeader">
       <div class="nav-wrap">
-        <a class="logo" href="index.html" aria-label="Hola Hola Kopitiam home">
+        <a class="logo" href="./" data-file-href="index.html" aria-label="Hola Hola Kopitiam home">
           <img src="images/logo/logo.png" alt="Hola Hola Kopitiam" />
         </a>
 
@@ -30,10 +30,14 @@
         </button>
 
         <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
-          <a class="active" href="index.html">HOME</a>
-          <a href="menu.html">MENU</a>
-          <a href="about.html">ABOUT US</a>
-          <a href="index.html#contact">CONTACT</a>
+          <a class="active" href="./" data-file-href="index.html">HOME</a>
+          <a href="menu/" data-file-href="menu/index.html">MENU</a>
+          <a href="about/" data-file-href="about/index.html">ABOUT US</a>
+          <a href="./#contact" data-file-href="index.html#contact">CONTACT</a>
+          <span class="nav-socials" aria-label="Social links">
+            <a class="nav-social" href="https://www.instagram.com/holahola.kopitiam" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="icons/instagram.svg" alt="" /></a>
+            <a class="nav-social" href="https://www.facebook.com/holaholakopitiam" target="_blank" rel="noreferrer" aria-label="Facebook"><img src="icons/facebook.svg" alt="" /></a>
+          </span>
         </nav>
       </div>
     </header>
@@ -50,7 +54,7 @@
               every mood, every gathering.
             </p>
             <div class="hero-actions">
-              <a class="hero-cta hero-cta-primary" href="menu.html">
+              <a class="hero-cta hero-cta-primary" href="menu/" data-file-href="menu/index.html">
                 <span class="hero-cta-main">
                   <img class="hero-cta-icon fork" src="icons/fork.svg" alt="" aria-hidden="true" />
                   <span>VIEW MENU</span>
@@ -124,7 +128,7 @@
               </div>
               <span class="ornament flip">⌁</span>
             </div>
-            <a class="view-all" href="menu.html">VIEW ALL MENU →</a>
+            <a class="view-all" href="menu/" data-file-href="menu/index.html">VIEW ALL MENU →</a>
           </div>
 
           <div class="product-grid">
@@ -216,7 +220,7 @@
             <div class="footer-icon" aria-hidden="true"><img src="images/footer/icons/clock.png" alt="" /></div>
             <h3>OPENING HOURS</h3>
             <p>Monday – Sunday</p>
-            <strong>11:00am - 9:00pm</strong>
+            <strong>10:00am - 10:00pm</strong>
           </div>
 
           <div class="footer-panel footer-contact">
@@ -235,31 +239,6 @@
           <figure class="footer-shop">
             <img src="images/footer/shop-front.png" alt="Hola Hola Kopitiam shop front" />
           </figure>
-        </div>
-
-        <div class="footer-middle">
-          <div class="footer-follow">
-            <h3>FOLLOW US</h3>
-            <div class="footer-socials">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Instagram">◎</a>
-              <a href="#" aria-label="Xiaohongshu">RED</a>
-            </div>
-          </div>
-
-          <div class="footer-loop">
-            <span aria-hidden="true">✉</span>
-            <div>
-              <h3>STAY IN THE LOOP</h3>
-              <p>Be the first to know about new dishes,<br />promotions and special events.</p>
-            </div>
-          </div>
-
-          <form class="footer-subscribe" action="#" method="post">
-            <label class="sr-only" for="footer-email-home">Your email address</label>
-            <input id="footer-email-home" type="email" placeholder="Your email address" />
-            <button type="submit">SUBSCRIBE</button>
-          </form>
         </div>
 
         <div class="footer-bottom">
